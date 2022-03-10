@@ -1,8 +1,9 @@
-const express = require('express');
+require('dotenv').config();
 
+const express = require('express');
 const server = express();
 
-const port = 9000;
+const port = process.env.PORT || 9000;
 const host = '127.0.0.1';
 
 server.use(express.json());
