@@ -8,7 +8,8 @@ const host = '127.0.0.1';
 server.use(express.json());
 
 server.get('/', (req, res) =>{
-  res.status(200).send('<h1>Server is running:</h1>')
+  res.status(200).send(`<h1>Server is running: ${port}</h1>`);
+  return;
 });
 
 
